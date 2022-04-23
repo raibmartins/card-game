@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+header{
+    display: flex;
+    padding: 5px;
+    background-color:rgb(99, 1, 140);
+    justify-content:space-between;
+    align-items:center;
+}
+.theme{
+    background-color:rgb(99, 1, 140)
+}
+footer{
+    text-align: center;
+    padding: 25px;
+    color:white;
+}
+header h1{
+    margin-left:0.5em;
+    margin-top: 15px;
+    float: right;
+    color:white;
+}
+img{
+    margin-left: 1em;
+    width: 60px;
+    height: 60px;
+}
+#deuses{
+    height: 20px;
+    width: 300px;
+}
+#search{
+    width: 100px;
+    padding:5px;
+    border: none;
+    float: right;
+    margin-right: 5px;
+    
+}
+main{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+.ambos{
+    background-color: #343635;
+    transition: .5s;
+    color: white;
+}
+
+.btns{
+    margin:150px 0;
+    width:200px;
+    padding:150px 100px;
+    text-align:center;
+   
+}
+a{
+    text-decoration: none;
+
+    
+}
+.ambos:hover{
+    background-color: rgb(163, 229, 255);
+
+}
+@media screen and (max-width:820px){
+   
+    header{
+        flex-direction: column;
+    }
+    .btns{
+        margin:150px 0;
+        width:100px;
+        padding:110px 100px;
+    
+       
+    }
+}
+@media screen and (max-width:440px){
+    
+    header:nth-child(1){
+        text-align:center;
+    }
+    header h1{
+        margin-left:0;
+        margin-top: 0;
+        float: initial;
+        color:white;
+    }
+    img{
+        margin-left: 1em;
+        width: 60px;
+        height: 60px;
+    }
+    
+    #right{
+        display:flex;
+        flex-direction: column;
+        
+    }
+    .btns{
+        margin:10px 0;
+        padding:110px 100px;
+       
+    }
+    #search{
+        width: 100px;
+        padding:5px;
+        border: none;
+        float: initial;
+        margin-left: 100px;
+        
+    }
+}
