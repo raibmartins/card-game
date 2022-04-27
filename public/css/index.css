@@ -50,18 +50,20 @@ main{
     background-color: #343635;
     transition: .5s;
     color: white;
+
 }
 
 .btns{
     margin:150px 0;
-    width:200px;
-    padding:150px 100px;
+    padding:150px 150px;
     text-align:center;
-   
+    border: none;
+    font-size: large;
+    font-weight: bolder;
 }
 a{
     text-decoration: none;
-
+    
     
 }
 .ambos:hover{
