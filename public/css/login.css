@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    font-family: sans-serif;
+}
+body{
+  background-image: url(https://colorlib.com/etc/lf/Login_v4/images/bg-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+main{
+    margin: 200px auto;
+    text-align: center;
+}
+#login{
+  padding: 2em;
+  background: rgb(255, 254, 254);
+  border-radius: 8px;
+  width: 360px; 
+}
+#aute{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 450px;
+  gap:5px;
+  margin: 0 auto;
+  z-index: 0;
+}
+
+input{
+  box-shadow: 0 0 5px grey;
+  width: 350px;
+  border:none;
+  font-size: 1.2em;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-top: 1em;
+}
+button{
+  box-shadow: 0 0 5px grey;
+  width: 350px;
+  border:none;
+  font-size: 1.2em;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-top: 1em;
+}
+
+input:focus{
+  border:none;
+  box-shadow: none;
+}
+button[type="submit"]{
+  padding: 0.5em 1em;
+  color: white;
+  width: 250px;
+  
+  background-color:rgb(156, 0, 156);
+}
+#aute :nth-child(3){
+  text-align: center;
+}
+#ori{
+  display: flex;
+  flex-direction: column;
+  width: 150px; 
+  padding-top: 4rem;
+  
+}
+.mensage{
+  border-radius: 10px;
+  box-shadow: 0 0 5px grey;
+  padding: 0.5em 1em;
+  color: white;
+  width: 125px;
+  margin-top: 1em;
+  background-color:rgb(156, 0, 156);
+}
+#email{
+  display: none;
+}
+#senha{
+  display: none;
+  margin-top:65px;
+}
+#autenticar{
+  display: none;
+  margin-top: 120px;
+  width: 160px;
+}
