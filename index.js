@@ -12,12 +12,16 @@ app.get('/', function(req,res){
     res.sendFile(VIEW_PATH +'/index.html')
 })
 
-app.get('/jogar', function(req,res) {
+app.get('/choose', function(req,res) {
     res.sendFile(VIEW_PATH + '/game/game.html');
 });
 
 app.get('/login', function(req,res) {
     res.sendFile(VIEW_PATH+'/login/login.html')
+});
+
+app.use('/jogar', function(req, res) {
+    console.log(res.body)
 });
 
 app.use('/formCadastro', function(req,res){
@@ -27,6 +31,5 @@ app.use('/formCadastro', function(req,res){
         res.send('usuário ou senha incorreto')
     }
 });
-
 
 app.listen(PORT);
