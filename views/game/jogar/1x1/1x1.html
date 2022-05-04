@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player vs Player</title>
+    <link rel="stylesheet" href="/bootstrap/bootstrap.css">
+    <style>
+        body {
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-deck">
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">
+                Player 1
+                <div class="text-right">
+                    <img id="player1-card" width="100px" src="">
+                </div>
+                <div>
+                    <small class="text-muted" id="player1-points">Pontos: 0</small>
+                </div>
+            </div>
+            <ul class="list-group list-group-flush" id="player1-radios">
+                <li class="list-group-item"><input type="radio" name="player1-radiogroup" value="intelligence"><span id="valor"></span></li>
+                <li class="list-group-item"><input type="radio" name="player1-radiogroup" value="strength"><span id="valor"></span></li>
+                <li class="list-group-item"><input type="radio" name="player1-radiogroup" value="speed"><span id="valor"></span></li>
+                <li class="list-group-item"><input type="radio" name="player1-radiogroup" value="durability"><span id="valor"></span></li>
+                <li class="list-group-item"><input type="radio" name="player1-radiogroup" value="power"><span id="valor"></span></li>
+                <li class="list-group-item"><input type="radio" name="player1-radiogroup" value="combat"><span id="valor"></span></li>
+            </ul>
+        </div>
+        <button type="button" class="btn btn-success" style="height: 50px;" onclick="comparar()">Comparar</button>
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">
+                Player 2
+                <div class="text-right">
+                    <img id="player2-card" width="100px" src="">
+                </div>
+                <div>
+                    <small class="text-muted" id="player2-points">Pontos: 0</small>
+                </div>
+            </div>
+            <ul class="list-group list-group-flush" id="player2-radios">
+                <li class="list-group-item"><input type="radio" name="player2-radiogroup" value="intelligence"><span id="valor"></span></li>
+                <li class="list-group-item"><input type="radio" name="player2-radiogroup" value="strength"><span id="valor"></span></li>
+                <li class="list-group-item"><input type="radio" name="player2-radiogroup" value="speed"><span id="valor"></span></li>
+                <li class="list-group-item"><input type="radio" name="player2-radiogroup" value="durability"><span id="valor"></span></li>
+                <li class="list-group-item"><input type="radio" name="player2-radiogroup" value="power"><span id="valor"></span></li>
+                <li class="list-group-item"><input type="radio" name="player2-radiogroup" value="combat"><span id="valor"></span></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="1x1.js"></script>
+
+</html>
