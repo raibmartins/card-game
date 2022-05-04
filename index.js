@@ -46,7 +46,7 @@ app.use("/formCadastrar", function(req, res) {
         res.sendFile(VIEW_PATH+'/login/login.html')
     }
 })
-
+    
 app.use('/formCadastro', function(req,res){
     if(req.body.nome =='misael' && req.body.senha ==='123'){
         res.send('deubom')
