@@ -44,6 +44,9 @@ app.post('/cadastrar', function(req,res){
 app.use("/formCadastrar", function(req, res) {
     if (!logado){
         res.sendFile(VIEW_PATH+'/login/login.html')
+    }
+})
+
 app.use('/formCadastro', function(req,res){
     if(req.body.nome =='misael' && req.body.senha ==='123'){
         res.send('deubom')
@@ -86,7 +89,6 @@ app.post('/comparar', function(req, res) {
     res.json(winner)
 });
 
-app.listen(PORT);
 app.use("/heroi", function(req, res){
      save.log(req.body)
      res.download('./heroi.json')
@@ -97,5 +99,5 @@ app.use("/heroi", function(req, res){
 //     res.download('./heroi.json')
 // })
 
-app.use(cors())
+app.use(cors());
 app.listen(PORT);
