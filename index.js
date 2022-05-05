@@ -44,18 +44,12 @@ app.post('/cadastrar', function(req,res){
 app.use("/formCadastrar", function(req, res) {
     if (!logado){
         res.sendFile(VIEW_PATH+'/login/login.html')
+    }else{
+        res.sendFile(VIEW_PATH+'/login/formCadastro.html')
     }
 })
     
-app.use('/formCadastro', function(req,res){
-    if(req.body.nome =='misael' && req.body.senha ==='123'){
-        res.send('deubom')
-    }else{
-        res.statusCode = 200;
-        console.log(req.query)
-        res.sendFile(VIEW_PATH + '/login/formCadastro.html')
-    }
-})
+
 
 app.get('/getCards', function(req, res) {
     getCards(req,res);
