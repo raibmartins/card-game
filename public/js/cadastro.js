@@ -7,6 +7,7 @@ var durability = document.getElementById("durability")
 var power = document.getElementById("power")
 var combat = document.getElementById("combat")
 var salvar = document.querySelector("form")
+var download = document.getElementById("download")
 
 salvar.addEventListener('submit', function(e){
     e.preventDefault()
@@ -38,6 +39,17 @@ salvar.addEventListener('submit', function(e){
     })  
 })
 
+
+download.addEventListener('click', function(){
+   
+        let request = fetch('/download')
+        request.then(function (response) {
+            var win = window.open(response.url, '_blank');
+            win.focus();
+        })
+      
+        
+})
 function clear(){
     nome.value = ""
     slug.value = ""

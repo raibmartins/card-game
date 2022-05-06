@@ -85,13 +85,14 @@ app.post('/comparar', function(req, res) {
 
 app.use("/heroi", function(req, res){
      save.log(req.body)
-     res.download('./heroi.json')
+     res.sendStatus(200)
+     //res.redirect('/download')
 
 })
 
-// app.use("/download", function(req,res){
-//     res.download('./heroi.json')
-// })
+app.use("/download", function(req,res){
+     res.download('./heroi.json')
+ })
 
 app.use(cors());
 app.listen(PORT);
